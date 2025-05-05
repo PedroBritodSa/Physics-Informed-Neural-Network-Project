@@ -42,19 +42,30 @@ This project implements a PINN to solve the eigenvalue problem for the Q-ball so
   - `ODELoss`: Implements the custom loss function based on the Klein-Gordon equation.
   - `gradients`: Utility function for computing gradients of tensors.
 
-## Results
+\section*{Results}
 
-The notebook demonstrates how the neural network can converge to a solution for the scalar field $\phi(r)$ and the eigenvalue $\omega$. It also compares the PINN solution with a traditional numerical solver and visualizes the convergence of $\omega$.
+This notebook demonstrates how the neural network can converge to a solution for the scalar field $\phi(r)$ and the eigenvalue $\omega$. It also compares the PINN solution with a traditional numerical solver and visualizes the convergence of $\omega$.
 
-As the latest update, we showed that it is possible to increase the model features mixing two different optimizers: the Adam optmizer and the LBFGS one. WEe utilized the last one for finning tuning, and what we got was a strong reducing time of training and improving the metrics results. Below we show the convergence for the $]omega$ value
+In the latest update, we showed that it is possible to enhance the model's performance by combining two different optimizers: the Adam optimizer and the L-BFGS optimizer. We used the latter for fine-tuning, which resulted in a significant reduction in training time and improved metric results. Below, we present the convergence of the $\omega$ value.
 
-### Visualization
-- Loss function decay during training.
-- Convergence of $\omega$ over iterations.
-- Comparison between the PINN solution and the numerical solution.
+\subsection*{Visualization}
+\begin{itemize}
+    \item Loss function decay during training.
+    \item Convergence of $\omega$ over iterations.
+    \item Comparison between the PINN solution and the numerical solution.
+\end{itemize}
 
-![Sample Plot](image.png)
-![Sample Plot](new_omega.png)
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{image.png}
+    \caption{Loss function and training evolution}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{new_omega.png}
+    \caption{Convergence of the eigenvalue $\omega$}
+\end{figure}
 
 
 ## Requirements
