@@ -46,12 +46,16 @@ This project implements a PINN to solve the eigenvalue problem for the Q-ball so
 
 The notebook demonstrates how the neural network can converge to a solution for the scalar field $\phi(r)$ and the eigenvalue $\omega$. It also compares the PINN solution with a traditional numerical solver and visualizes the convergence of $\omega$.
 
+As the latest update, we showed that it is possible to increase the model features mixing two different optimizers: the Adam optmizer and the LBFGS one. WEe utilized the last one for finning tuning, and what we got was a strong reducing time of training and improving the metrics results. Below we show the convergence for the $]omega$ value
+
 ### Visualization
 - Loss function decay during training.
 - Convergence of $\omega$ over iterations.
 - Comparison between the PINN solution and the numerical solution.
 
 ![Sample Plot](image.png)
+![Sample Plot](new_omega.png)
+
 
 ## Requirements
 
