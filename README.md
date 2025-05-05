@@ -42,30 +42,23 @@ This project implements a PINN to solve the eigenvalue problem for the Q-ball so
   - `ODELoss`: Implements the custom loss function based on the Klein-Gordon equation.
   - `gradients`: Utility function for computing gradients of tensors.
 
-\section*{Results}
+## Results
 
 This notebook demonstrates how the neural network can converge to a solution for the scalar field $\phi(r)$ and the eigenvalue $\omega$. It also compares the PINN solution with a traditional numerical solver and visualizes the convergence of $\omega$.
 
 In the latest update, we showed that it is possible to enhance the model's performance by combining two different optimizers: the Adam optimizer and the L-BFGS optimizer. We used the latter for fine-tuning, which resulted in a significant reduction in training time and improved metric results. Below, we present the convergence of the $\omega$ value.
 
-\subsection*{Visualization}
-\begin{itemize}
-    \item Loss function decay during training.
-    \item Convergence of $\omega$ over iterations.
-    \item Comparison between the PINN solution and the numerical solution.
-\end{itemize}
+### Visualization
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{image.png}
-    \caption{Loss function and training evolution}
-\end{figure}
+- Loss function decay during training.
+- Convergence of $\omega$ over iterations.
+- Comparison between the PINN solution and the numerical solution.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.6\textwidth]{new_omega.png}
-    \caption{Convergence of the eigenvalue $\omega$}
-\end{figure}
+![Loss Function](image.png)
+*Loss function and training evolution.*
+
+![Omega Convergence](new_omega.png)
+*Convergence of the eigenvalue $\omega$.*
 
 
 ## Requirements
