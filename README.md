@@ -59,7 +59,7 @@ In the latest update, we showed that it is possible to enhance the model's perfo
 
 - We show below the comparison between the PINN solution and the numerical solution for the case with Adam + L-BFGS optimizer.
 
-![Convergence](dowloaded.png)
+![Convergence](download.png)
 
 The number of epochs was reduced by **79%** when compared with the model without the addition of the L-BFGS optimizer. Yet, we obtained better loss values and a precision **67 times** higher than the previous model.
 
