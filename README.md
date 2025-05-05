@@ -51,15 +51,19 @@ In the latest update, we showed that it is possible to enhance the model's perfo
 ### Visualization
 
 - Loss function decay during training.
-- Convergence of $\omega$ over iterations.
-- Comparison between the PINN solution and the numerical solution.
+- Convergence of $\omega$ over iterations for a model without the L-BFGS optimizer and other with the L-BFGS optimizer.
 
 ![Loss Function](image.png)
-*Loss function and training evolution.*
 
 ![Omega Convergence](new_omega.png)
-*Convergence of the eigenvalue $\omega$.*
 
+- We show below the comparison between the PINN solution and the numerical solution for the case with Adam + L-BFGS optimizer.
+
+![Convergence](dowloaded.png)
+
+The number of epochs was reduced by **79%** when compared with the model without the addition of the L-BFGS optimizer. Yet, we obtained better loss values and a precision **67 times** higher than the previous model.
+
+Upgrades like this are fundamental for improving model performance. This is a clear example of how such a strategy can lead to significantly better results.
 
 ## Requirements
 
